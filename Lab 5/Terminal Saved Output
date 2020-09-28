@@ -1,0 +1,164 @@
+Last login: Wed Sep 23 13:35:08 on ttys000
+Welcome home, Dennis!
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Denniss-Air:~ klimenkoff9$ awk -F "\"*,\"*" '{print $1}' Immigrant.csv
+awk: can't open file Immigrant.csv
+ source line number 1
+Denniss-Air:~ klimenkoff9$ cd Desktop/Scholarship\ Office\ docs/nextGen\ data/
+Denniss-Air:nextGen data klimenkoff9$ awk -F "\"*,\"*" '{print $1}' Immigrant.csv
+FirstName
+ALONDRA
+HALIMA
+MARITZA
+JEANINE
+KESCHAR
+KELLY
+ELODIA
+RICHARD
+LOIS
+EVELYN
+CASSANDRA
+MAIMOUNA
+HAFSA
+MARIA
+Denniss-Air:nextGen data klimenkoff9$ cd ../../../
+Denniss-Air:~ klimenkoff9$ cd Desktop/Classes\ info/Fall\ \'20/CISC\ 3140/Lab\ 5/
+Denniss-Air:Lab 5 klimenkoff9$ echo a1output.txt
+a1output.txt
+Denniss-Air:Lab 5 klimenkoff9$ ls
+regional-global-daily-latest.csv
+Denniss-Air:Lab 5 klimenkoff9$ touch  a1output.txt
+Denniss-Air:Lab 5 klimenkoff9$ ls
+a1output.txt				regional-global-daily-latest.csv
+Denniss-Air:Lab 5 klimenkoff9$ cut - d ',' - f 2 num.csv > a1output.txt
+usage: cut -b list [-n] [file ...]
+       cut -c list [file ...]
+       cut -f list [-s] [-d delim] [file ...]
+Denniss-Air:Lab 5 klimenkoff9$ cut -d ',' -f 2 num.csv > a1output.txt
+cut: num.csv: No such file or directory
+Denniss-Air:Lab 5 klimenkoff9$ cut -d ',' -f 2 num.csv > a1output.txt 
+cut: num.csv: No such file or directory
+Denniss-Air:Lab 5 klimenkoff9$ cut - d ',' -f 2 num.csv
+usage: cut -b list [-n] [file ...]
+       cut -c list [file ...]
+       cut -f list [-s] [-d delim] [file ...]
+Denniss-Air:Lab 5 klimenkoff9$ cut -d ',' -f 2 num.csv
+cut: num.csv: No such file or directory
+Denniss-Air:Lab 5 klimenkoff9$ cut -b ',' -f 2 num.csv
+cut: [-cf] list: values may not include zero
+Denniss-Air:Lab 5 klimenkoff9$ cut -c ',' -f 2 num.csv
+cut: [-cf] list: values may not include zero
+Denniss-Air:Lab 5 klimenkoff9$ grep -v "^#" input.csv > a1output.txt 
+grep: input.csv: No such file or directory
+Denniss-Air:Lab 5 klimenkoff9$ grep -v "^#" num.csv > a1output.txt 
+grep: num.csv: No such file or directory
+Denniss-Air:Lab 5 klimenkoff9$ ls
+a1output.txt				regional-global-daily-latest.csv
+Denniss-Air:Lab 5 klimenkoff9$ grep -v "^#" regional-global-daily-latest.csv > a1output.txt 
+Denniss-Air:Lab 5 klimenkoff9$ ls
+a1output.txt				regional-global-daily-latest.csv
+Denniss-Air:Lab 5 klimenkoff9$ pwd
+/Users/klimenkoff9/Desktop/Classes info/Fall '20/CISC 3140/Lab 5
+Denniss-Air:Lab 5 klimenkoff9$ open /Users/klimenkoff9/Desktop/Classes info/Fall '20/CISC 3140/Lab 5/a1output.txt
+> 
+Denniss-Air:Lab 5 klimenkoff9$ touch script.sh
+Denniss-Air:Lab 5 klimenkoff9$ ndm script.sh
+-bash: ndm: command not found
+Denniss-Air:Lab 5 klimenkoff9$ nano script.sh
+Denniss-Air:Lab 5 klimenkoff9$ touch script2.sh
+Denniss-Air:Lab 5 klimenkoff9$ nano script.sh
+Denniss-Air:Lab 5 klimenkoff9$ nano script2.sh
+Denniss-Air:Lab 5 klimenkoff9$ run script.sh
+-bash: run: command not found
+Denniss-Air:Lab 5 klimenkoff9$ script2.sh
+-bash: script2.sh: command not found
+Denniss-Air:Lab 5 klimenkoff9$ nano script2.sh
+Denniss-Air:Lab 5 klimenkoff9$ 
+Denniss-Air:Lab 5 klimenkoff9$ nano script.sh
+Denniss-Air:Lab 5 klimenkoff9$ bash script2.sh
+Denniss-Air:Lab 5 klimenkoff9$ sh  script2.sh
+Denniss-Air:Lab 5 klimenkoff9$ sh script.sh
+Denniss-Air:Lab 5 klimenkoff9$ nano script2.sh
+Denniss-Air:Lab 5 klimenkoff9$ sh script2.sh
+d--------------------------------
+Hi friend! Welcome to TicTacToe!
+--------------------------------
+Do you want to play the game?
+Input your answer into the console (Y/N)
+^R
+Y
+Do you want to fight computer or your friend?
+Input your answer into the console (C/F)
+If you want to come back the main menu input M
+C
+What's your name (or nickname)? Input your answer into the console.
+Dennis
+Are you picking X or O. Input your answer into the console (X/O).
+X
+Alrighty, let's get started!
+Dennis, please enter your placement (1-9)
+1
+  X |     |    
+----+-----+----
+    |     |    
+----+-----+----
+    |     |    
+AI picked cell #8
+  X |     |    
+----+-----+----
+    |     |    
+----+-----+----
+    |  O  |    
+Dennis, please enter your placement (1-9)
+2
+  X |  X  |    
+----+-----+----
+    |     |    
+----+-----+----
+    |  O  |    
+AI picked cell #3
+  X |  X  | O  
+----+-----+----
+    |     |    
+----+-----+----
+    |  O  |    
+Dennis, please enter your placement (1-9)
+5
+  X |  X  | O  
+----+-----+----
+    |  X  |    
+----+-----+----
+    |  O  |    
+AI picked cell #7
+  X |  X  | O  
+----+-----+----
+    |  X  |    
+----+-----+----
+  O |  O  |    
+Dennis, please enter your placement (1-9)
+9
+  X |  X  | O  
+----+-----+----
+    |  X  |    
+----+-----+----
+  O |  O  | X  
+Winner Winner Chicken Dinner! Dennis won this round!
+Dennis has won 1 times.
+Bot has won 0 times.
+Rematch? (input Y)
+To come back to the previous menu input M
+M
+Do you want to fight computer or your friend?
+Input your answer into the console (C/F)
+If you want to come back the main menu input M
+M
+Do you want to play the game?
+Input your answer into the console (Y/N)
+N
+Thank you for playing our game.
+Denniss-Air:Lab 5 klimenkoff9$ touch a3output.txt
+Denniss-Air:Lab 5 klimenkoff9$ nano a3output.txt 
+Denniss-Air:Lab 5 klimenkoff9$ 
